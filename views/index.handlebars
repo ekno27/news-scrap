@@ -1,0 +1,60 @@
+
+
+    <div class= "container" id="mainWrapper">
+
+
+    <h1>hey whatsup you guys yes this is website</h1>
+    <button >  <a class="nav-link" href="/scrape">Scrap me </a> </button>
+
+    {{#if dbArticle}}
+    {{#each dbArticle}}
+    <h2 class="headline">{{headline}}</h2> 
+    <h3><a href="{{link}}" target="_blank">Learn more</a></h2> 
+    <h4>{{author}}</h2>
+    <img src="{{thumbnail}}" alt="Image"> 
+    {{/each}}
+    {{else}}
+    <h2>No articles found! Press scrape to retrieve more articles</h2>
+    {{/if}}
+
+
+    <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" id="modal">
+        <div class="modal-header">
+
+          <h4 class="modal-title">Add a note to <strong><text id="headline"></text></strong> </h4>
+          
+        </div>
+        <div class="modal-body">
+        <br>
+        <br>
+
+          <h5>Note heading</h5>
+        <textarea placeholder="New Note" rows="6" cols="60"></textarea>
+          
+      
+
+    
+        <br>
+        <br>
+        <hr>
+          
+         
+          <button type="button" class="btn btn-outline-success" id="modalSubmit" data-dismiss="modal">Submit
+            <i class="far fa-arrow-alt-circle-up"></i>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      
+
+    </div>

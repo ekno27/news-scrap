@@ -19,19 +19,17 @@ var MusicArticleSchema = new Schema({
     link: {
         type:String,
         required:true,
-        unique:true,
+        unique: true,
         dropDups: true
     },
     author:{
         type:String,
         required:true,
-        unique:true,
         dropDups: true
     },
     thumbnail:{
         type:String,
         required:true,
-        unique:true,
         dropDups: true
     },
     note:{

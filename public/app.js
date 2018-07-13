@@ -26,6 +26,7 @@ $("#modalSubmit").on("click", function(){
  //sending note to backend 
  $.post(`/articles/${_id}`,submitNote,function(){
     console.log("Note Added!");
+    $("#note").val("");
     // location.reload(true);
  });
 });

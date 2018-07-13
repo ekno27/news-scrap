@@ -38,7 +38,9 @@ function populateNoteSpace(item){
     if(item.note===undefined){
         $("#note-space").empty();
         $("#note-space").append(`<p>No notes so far!</p>`)
-    }else{
+    }else
+    {
+    $("#note-space").empty();
     $("#note-space").append(`<p>${item.note.note}</p>`)
 
     }

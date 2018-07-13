@@ -2,10 +2,10 @@ console.log("hello");
 
 var headline="none";
 var _id = "none"
-$(".headline").on("click", function(){
+$(".card-img-top").on("click", function(){
     _id = $(this).attr("db_id")
     console.log(_id);
-    headline = $(this).text();
+    headline = $(this).attr("headline");
     $("#headline").text(headline);
     $("#results-modal").modal("toggle");
     //making a call for the article

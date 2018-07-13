@@ -1,0 +1,19 @@
+.card{
+    float: left;
+    width: 18rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.row{
+    margin: 0 auto;
+}
+h1, h2{
+    text-align: center
+}
+button{
+    margin: auto 0;
+}
+img{
+    width: 200px;
+    height: 150px;
+  }

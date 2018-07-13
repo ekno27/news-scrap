@@ -8,10 +8,11 @@
     <button >  <a class="nav-link" href="/scrape">Scrap me </a> </button>
 
      {{#if dbArticle}}
-    {{#each dbArticle}}
-    <div class="row">
-        <div class="col-md-12 " id="gif-space">
-           <div class="card article-space" style="width: 18rem;">
+      <div class="row">
+        <div class="col-md-12 align-items-stretch">
+        {{#each dbArticle}}
+    
+      <div class="card article-space" style="width: 18rem;">
         <img class="card-img-top" class="thumbnail" src="{{thumbnail}}" db_id={{_id}} headline="{{headline}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title" class="headline" db_id={{_id}}>{{headline}}</h5>
@@ -19,16 +20,15 @@
           <a href="{{link}}" class="btn btn-primary" target="_blank">Learn more</a>
         </div>
       </div>
-       {{/each}}
-        {{else}}
-    <h2>No articles found! Press scrape to retrieve more articles</h2>
-    {{/if}}
-
+       {{/each}} 
+          
         </div>
-     </div>
 
+      </div>
 
-     
+     {{else}}
+        <h2>No articles found! Press scrape to retrieve more articles</h2>
+    {{/if}}
      
 
     <div id="results-modal" class="modal fade" role="dialog">

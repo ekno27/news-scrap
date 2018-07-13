@@ -8,7 +8,7 @@
 
     {{#if dbArticle}}
     {{#each dbArticle}}
-    <h2 class="headline">{{headline}}</h2> 
+    <h2 class="headline" db_id={{_id}}>{{headline}}</h2> 
     <h3><a href="{{link}}" target="_blank">Learn more</a></h2> 
     <h4>{{author}}</h2>
     <img src="{{thumbnail}}" alt="Image"> 
@@ -25,23 +25,20 @@
       <div class="modal-content" id="modal">
         <div class="modal-header">
 
-          <h4 class="modal-title">Add a note to <strong><text id="headline"></text></strong> </h4>
+          <h4 class="modal-title">Notes for <strong><text id="headline"></text></strong> </h4>
           
         </div>
         <div class="modal-body">
-        <br>
-        <br>
+        
+          <h3>Notes </h3>
+          <div id="note-space"></div>
 
-          <h5>Note heading</h5>
-        <textarea placeholder="New Note" rows="6" cols="60"></textarea>
-          
-      
+          <h5>Add a note:</h5>
+        <textarea placeholder="New Note" rows="6" cols="60" id="note"></textarea>
 
-    
         <br>
         <br>
         <hr>
-          
          
           <button type="button" class="btn btn-outline-success" id="modalSubmit" data-dismiss="modal">Submit
             <i class="far fa-arrow-alt-circle-up"></i>
